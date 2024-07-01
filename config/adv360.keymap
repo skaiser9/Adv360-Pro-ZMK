@@ -40,14 +40,7 @@
     macros {
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        Delete_word {
-            bindings = <&kp LC(DEL)>;
-            key-positions = <65 70>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
