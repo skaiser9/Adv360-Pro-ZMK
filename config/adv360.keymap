@@ -37,6 +37,8 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp K &kp AT &kp LS(J) &kp LS(T) &kp LS(M) &kp D &kp E &kp C &kp E &kp M &kp B &kp E &kp R &kp N2 &kp N0 &kp N2 &kp N5>;
             label = "TEST_MACRO";
+            tap-ms = <1>;
+            wait-ms = <1>;
         };
     };
 
