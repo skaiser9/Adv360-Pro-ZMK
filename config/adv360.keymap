@@ -35,7 +35,7 @@
         test_macro: test_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp K &kp AT &kp LS(J) &kp LS(T) &kp LS(M) &kp D &kp E &kp C &kp E &kp M &kp B &kp E &kp R &kp N2 &kp N0 &kp N2 &kp N5>;
+            bindings = <&kp S &kp K &kp AT &kp LS(J) &kp LS(T) &kp LS(M) &kp D &kp E &kp C &kp E &kp M &kp B &kp E &kp R &kp N2 &kp N0 &kp N2 &kp NUMBER_4>;
             label = "TEST_MACRO";
             tap-ms = <30>;
             wait-ms = <1>;
