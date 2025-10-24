@@ -40,6 +40,34 @@
             tap-ms = <30>;
             wait-ms = <1>;
         };
+
+        WINDOWS_LEFT: WINDOWS_LEFT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(LEFT))>;
+            label = "WINDOWS_LEFT";
+        };
+
+        WINDOWS_RIGHT: WINDOWS_RIGHT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(RIGHT))>;
+            label = "WINDOWS_RIGHT";
+        };
+
+        WINDOWS_UP: WINDOWS_UP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(UP_ARROW)>;
+            label = "WINDOWS_UP";
+        };
+
+        WINDOWS_DOWN: WINDOWS_DOWN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(DOWN_ARROW)>;
+            label = "WINDOWS_DOWN";
+        };
     };
 
     keymap {
@@ -67,11 +95,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans                                           &mo 3        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &bootloader                                      &bootloader  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none        &trans  &trans      &trans  &trans  &none        &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans      &trans                       &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans       &trans  &trans      &trans  &trans  &trans               &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4       &kp F5         &kp F6  &trans                                           &mo 3        &kp F7  &kp F8         &kp F9          &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans       &trans         &trans  &bootloader                                      &bootloader  &trans  &trans         &trans          &trans   &trans   &trans
+&trans  &trans  &trans  &trans       &trans         &trans  &none        &trans  &trans      &trans  &trans  &none        &trans  &trans         &trans          &trans   &trans   &trans
+&trans  &trans  &trans  &trans       &trans         &trans                       &trans      &trans                       &trans  &trans         &trans          &trans   &trans   &trans
+&trans  &trans  &trans  &WINDOWS_UP  &WINDOWS_DOWN          &trans       &trans  &trans      &trans  &trans  &trans               &WINDOWS_LEFT  &WINDOWS_RIGHT  &trans   &trans   &trans
             >;
         };
 
